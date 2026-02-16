@@ -1,24 +1,47 @@
-# HTML/CSS Practice Project
+# 💳 Zarinpal - Payment Gateway Homepage
 
-This is a practice project for front-end development. In this project, I tried to implement a simple web page using HTML and CSS.
+A responsive implementation of Zarinpal payment gateway homepage using HTML and CSS.
 
-## Technologies Used
+## 🚀 Live Demo
+🔗 [View Live Project](https://aynazmeymanatt.github.io/zarinpal-project)
+
+## ✨ Features
+- 📱 **Fully responsive** - Mobile-first approach works on all devices
+- 🎨 **Clean UI** - Modern payment gateway interface
+- 🔧 **Flexbox & Grid** - Modern CSS layouts
+- 🖼️ **Font Awesome icons** - Enhanced visual elements
+
+## 🛠️ Technologies Used
 - HTML5
 - CSS3
-- Font Awesome
+- Font Awesome 6
+- Flexbox & CSS Grid
 
-## Features
-- Responsive design
-- Using Flexbox and Grid
-- Font Awesome icons
+## 📁 Project Structure
+zarinpal-project/
+├── index.html
+├── css/
+│ └── all.css
+├── styles/
+│ ├── style.css
+│ └── fonts.css
+├── images/
+│ └── (project images)
+└── webfonts/
+└── (font files)
 
-## How to Run
-1. Clone the project
-2. Open `index.html` file in your browser
+text
 
-## Preview Image
-(You can take a screenshot of the project and add it here later)
+## 🏃 How to Run Locally
+1. Clone the repository
+   ```bash
+   git clone https://github.com/aynazmeymanatt/zarinpal-project.git
+Open index.html in your browser
 
-## Live Demo
-You can view the live project here:  
-[https://aynazmeymanatt.github.io/zarinpal-project](https://aynazmeymanatt.github.io/zarinpal-project)
+📞 Contact
+GitHub: @aynazmeymanatt
+
+Email: aynazmeymanat@gmail.com
+
+📄 Note
+This is a practice project for front-end development training.
