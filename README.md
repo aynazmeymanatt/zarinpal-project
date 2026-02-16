@@ -18,3 +18,7 @@ This is a practice project for front-end development. In this project, I tried t
 
 ## Preview Image
 (You can take a screenshot of the project and add it here later)
+
+## Live Demo
+You can view the live project here:  
+[https://aynazmeymanatt.github.io/zarinpal-project](https://aynazmeymanatt.github.io/zarinpal-project)
