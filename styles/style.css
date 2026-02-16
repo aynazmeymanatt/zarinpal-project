@@ -1,0 +1,751 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+  font-family: 'YekanBakhBold';
+  src: url('/fonts/YekanBakhBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iranyekanwebmedium';
+  src: url('/fonts/iranyekanwebmedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iranyekanwebregular';
+  src: url('/fonts/iranyekanwebregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YekanBakhHeavy';
+  src: url('/fonts/YekanBakhHeavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YekanBakhMedium';
+  src: url('/fonts/YekanBakhMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+      align-items: center;     
+  justify-content: space-between;
+  padding: calc(1rem + 0.5vw) calc(2rem + 4vw);
+}
+
+.zarrinpal-icon{
+    width: 15px;
+    height: 15px;
+    padding-right: 120px;
+}
+
+.my-zarinpal a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(148, 183, 247);
+    border-radius: 30px;
+   font-weight: 700;        /* بولدتر از 600 */
+  font-size: 14px;         /* ریزتر از حالت پیش‌فرض */
+  color: #000000;
+}
+
+.my-zarinpal{
+  margin-top: 15px; 
+    font-family: 'YekanBakhHeavy';
+}
+
+.icon{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 35px;
+    padding-top: 15px;
+    font-family: 'YekanBakhMedium';
+    font-weight: 500;
+}
+
+.first-backgrund{
+   height: 630px;
+   display: flex;
+   border-radius: 22px;
+   /* padding: 60px 30px 60px 40px; */
+   background: #010305;
+   background: linear-gradient(187deg, rgba(1, 3, 5, 1) 1%, rgba(61, 101, 153, 1) 99%, rgba(0, 212, 255, 1) 93%);
+   margin: calc(2rem + 4vw) calc(2rem + 2vw);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end; /* این باعث میشه متن‌ها به سمت راست بچسبن */
+  text-align: right;     /* متن‌ها راست‌چین بشن */
+  flex: 1;
+  padding: 100px 40px 0 0;
+}
+
+
+.first-img{
+    height: 470px;
+    width: 530px;
+    padding-top: 100px ;
+    padding-left: 80px;
+    padding-bottom: 40px;
+}
+
+.first-backgrund .text .first-text{
+    direction: rtl;
+    color: #ffffff;
+    padding: 50px 20px 10px 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+ .second-text{
+    padding-top: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+.first-text, .second-text {
+  word-spacing: 5px;     /* فاصله بین کلمات */
+  letter-spacing: 0.5px; /* فاصله بین حروف */
+  padding-left: 40px;
+  font-family: 'YekanBakhMedium', sans-serif;
+}
+
+
+.buttom{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 20px 70px auto;
+    gap: 15px;
+     margin-top: 40px; /* فاصله از متن بالا */
+  padding: 0 20px 70px 0
+}
+
+.sabtnam {
+    background: rgb(116, 174, 58 , 0.8);
+    padding: 6px 10px;
+    border-radius: 10px;
+     border: none;            /* حذف قاب پیش‌فرض */
+  outline: none;           /* حذف خط دور هنگام فوکوس */
+}
+
+.sabtnam a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    font-family: 'YekanBakhHeavy';
+}
+
+.vorod {
+    background: rgba(86, 110, 207, 0.3);
+    padding: 6px 10px;
+    border-radius: 10px;
+     border: none;            /* حذف قاب پیش‌فرض */
+  outline: none;
+}
+
+.vorod a{
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: 500;
+        font-family: 'YekanBakhHeavy';
+
+}
+
+.sabtnam:hover{
+    transform:translate(3px , 3px);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.vorod:hover{
+    transform:translate(3px , 3px);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.second-backgrund{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+}
+
+.second-img {
+  width: 500px;
+  height: 500px; /* یا هر ارتفاعی که می‌خوای */
+  overflow: hidden; /* برای جلوگیری از بیرون‌زدگی تصویر */
+  padding-right: 100px;
+}
+
+.second-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.second-backgrund .text2 .one{
+    direction: rtl;
+    padding: 120px 120px 10px 120px;
+    font-family: 'YekanBakhMedium', sans-serif;
+    color: grey;
+}
+
+.second-backgrund .text2 .two{
+    direction: rtl;
+    padding:  0 120px;
+    font-family: 'YekanBakhMedium', sans-serif;
+    color: black;
+}
+
+.second-backgrund .text2 .three{
+    direction: rtl;
+    padding: 10px 120px;
+    font-family: 'YekanBakhMedium', sans-serif;
+    color: grey;
+    line-height: 2rem;
+}
+
+.second-backgrund .buttom2{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+    margin: 20px 120px;
+    height: 30px;
+}
+
+.second-backgrund .buttom2 a{
+  text-decoration: none;
+  border: none;
+  padding: 7px 12px;
+  font-family: 'YekanBakhHeavy';
+
+}
+
+.second-backgrund .buttom2 .sakht-dargah a{
+    background-color: rgb(127, 198, 56);
+    color: #000000;
+    border-radius: 7px;
+}
+
+.second-backgrund .buttom2 .bishtar-bedanid a{
+    background-color: rgb(236, 241, 231);
+    color: #000000;
+    border-radius: 7px;
+}
+
+.second-backgrund .buttom2 button {
+    border: none;
+    padding: 0;
+    background: none;
+}
+
+.second-backgrund .buttom2 .bishtar-bedanid {
+ background-color: rgb(236, 241, 231);
+  color: #000000;
+  border-radius: 7px;
+  padding: 15px 12px;
+  font-family: 'YekanBakhHeavy';
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  direction: rtl;
+  border: none;
+}
+
+.second-backgrund .buttom2 .bishtar-bedanid img {
+  width: 16px;
+  height: auto;
+}
+
+.third-background {
+  display: flex;
+  flex-direction: row-reverse; /* متن راست، تصویر چپ */
+  justify-content: flex-end;
+  gap: 200px;
+  margin-left: 150px;
+}
+
+.third-img {
+  width: 600px;
+  height: 550px;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start; /* تصویر بچسبه به چپ */
+  align-items: center;
+  padding: 0; /* اگه padding اضافی داری حذفش کن */
+}
+
+.third-img img {
+  width: 100%;
+margin-right: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center; /* تصویر از چپ شروع بشه */
+  display: block;
+}
+
+.third-text{
+    padding-right: 200px;
+    text-align: right;
+    padding-top: 120px;
+    line-height: 35px;
+    font-family: 'YekanBakhMedium', sans-serif;
+}
+.text-one{
+    color: gray;
+    padding-bottom: 7px;
+}
+
+.text-three{
+     color: gray;
+    padding-top: 7px;
+}
+
+.third-text .buttom2{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.third-text .buttom2 a{
+    text-decoration: none;
+      font-family: 'YekanBakhHeavy';
+      font-size: 12px;
+
+}
+
+.third-text .buttom2 .btn-green-btn{
+    background: rgb(116, 174, 58 , 0.8);
+    border-radius: 15px;
+    padding:  5px 15px;
+    color :#000000;
+    margin-top: 15px;
+}
+
+.third-text .buttom2 .btn-light-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: rgba(229, 232, 226, 0.8);
+    border-radius: 15px;
+    padding:  5px 15px;
+    color :#000000;
+    margin-top: 15px;
+}
+
+.btn-light-btn:hover{
+    transform:translate(3px , 3px);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-green-btn:hover{
+    transform:translate(3px , 3px);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.background4{
+  display: flex;
+    margin-top:70px;
+  margin-left: 180px;
+  gap: 100px;
+}
+
+.text4{
+  text-align: right;
+  line-height: 35px;
+  font-family: 'YekanBakhMedium', sans-serif;
+}
+
+.background4 .img4{
+  padding-top: 30px;
+}
+
+.text4 p{
+  color: gray;
+  padding: 20px 0px;
+  font-size: 17px;
+}
+
+.text4 .buttom4{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.text4 .buttom4 a{
+    text-decoration: none;
+      font-family: 'YekanBakhHeavy';
+      font-size: 12px;
+
+}
+
+.text4 .buttom4 .btn-green-btn4{
+    background: rgb(116, 174, 58 , 0.8);
+    border-radius: 15px;
+    padding:  5px 15px;
+    color :#000000;
+    margin-top: 15px;
+}
+
+.text4 .buttom4 .btn-light-btn4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: rgba(229, 232, 226, 0.8);
+    border-radius: 15px;
+    padding:  5px 15px;
+    color :#000000;
+    margin-top: 15px;
+}
+
+.btn-light-btn4:hover{
+    transform:translate(3px , 3px);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-green-btn4:hover{
+    transform:translate(3px , 3px);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text5{
+  text-align: right;
+  line-height: 35px;
+  font-family: 'YekanBakhMedium', sans-serif;
+}
+
+.text5 p{
+  color: gray;
+  padding: 20px 0px;
+  font-size: 17px;
+}
+
+.text5 .buttom5{
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.text5 .buttom5 a{
+    text-decoration: none;
+      font-family: 'YekanBakhHeavy';
+      font-size: 12px;
+
+}
+
+.text5 .buttom5 .btn-green-btn5{
+    background: rgb(116, 174, 58 , 0.8);
+    border-radius: 15px;
+    padding:  5px 15px;
+    color :#000000;
+    margin-top: 15px;
+}
+
+.text5 .buttom5 .btn-light-btn5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: rgba(229, 232, 226, 0.8);
+    border-radius: 15px;
+    padding:  5px 15px;
+    color :#000000;
+    margin-top: 15px;
+}
+
+.btn-light-btn5:hover{
+    transform:translate(3px , 3px);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-green-btn5:hover{
+    transform:translate(3px , 3px);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.background5 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 100px 180px;
+   flex-direction: row-reverse;
+   gap: 100px;
+   direction: rtl;
+   min-height: 400px;  /* به جای height */
+   height: auto;       /* ✅ ارتفاع آزاد */
+}
+.background5 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  min-width: 0;
+}
+
+.img5 {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;  /* وسط‌چین شه */
+   min-width: 0;
+   min-height: 400px;
+}
+
+.img5 img {
+ /* max-width: 100%;   
+   height: auto;      */
+   /* object-fit: contain;
+   display: block */
+      width: 100%;
+   height: auto;
+   display: block;
+}
+
+.background6{
+  display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 60px;
+   margin: 30px 30px 120px 250px;
+}
+
+.background6 .img6{
+  padding-right:130px;
+}
+
+.text6{
+  text-align: right;
+  line-height: 35px;
+  font-family: 'YekanBakhMedium', sans-serif;
+}
+
+.text6 p{
+  color: gray;
+  padding: 20px 0px;
+  font-size: 17px;
+}
+
+.text6 .buttom5{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.text6 .buttom6 a{
+    text-decoration: none;
+      font-family: 'YekanBakhHeavy';
+      font-size: 12px;
+
+}
+
+.text6 .buttom5 .btn-green-btn5{
+    background: rgb(116, 174, 58 , 0.8);
+    border-radius: 15px;
+    padding:  5px 15px;
+    color :#000000;
+    margin-top: 15px;
+}
+
+.text6 .buttom5 .btn-light-btn5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background: rgba(229, 232, 226, 0.8);
+    border-radius: 15px;
+    padding:  5px 15px;
+    color :#000000;
+    margin-top: 15px;
+}
+
+.btn-light-btn5:hover{
+    transform:translate(3px , 3px);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-green-btn5:hover{
+    transform:translate(3px , 3px);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text6 .buttom5 a{
+    text-decoration: none;
+      font-family: 'YekanBakhHeavy';
+      font-size: 12px;
+
+}
+
+.background7{
+  display: flex;
+  flex-direction: row-reverse;
+    align-items: stretch;
+   justify-content: space-between;
+   padding-right: 170px;
+   padding-left: 200px;
+   margin-top: 160px;
+   margin-bottom: 100px;
+}
+
+.background7 .right {
+  word-spacing: 5px;     /* فاصله بین کلمات */
+  letter-spacing: 0.5px; /* فاصله بین حروف */
+  font-family: 'YekanBakhMedium', sans-serif;
+  direction: rtl;
+  line-height: 2.5rem;
+  font-size: 14px;
+  padding-top: 140px;
+}
+
+.background7 .right h2{
+  color: #000000;
+}
+
+.background7 .right p{
+  color: gray;
+  line-height: 30px;
+  padding-top: 20px;
+}
+
+.center .icon2{
+  display: flex;
+  gap: 10px;
+  flex-direction: row-reverse;
+}
+
+.background7 img{
+  height:40px;
+  width: 40px;
+}
+
+.background7 .center{
+    padding-top: 60px;
+}
+.background7 .left{
+    padding-top: 60px;
+}
+
+
+.center .icon2 h2{
+   font-family: 'YekanBakhMedium', sans-serif;
+  direction: rtl;
+}
+
+.center .up p {
+  font-family: 'YekanBakhMedium', sans-serif;
+  direction: rtl;
+  color: gray;
+  padding-top: 15px;
+    line-height: 2rem;
+    font-size: 14px;
+  padding-bottom: 70px;
+}
+
+ .center .down p{
+   font-family: 'YekanBakhMedium', sans-serif;
+  direction: rtl;
+    line-height: 2rem;
+  color: gray;
+    font-size: 14px;
+ }
+
+ .left .icon2{
+  display: flex;
+  gap: 10px;
+  flex-direction: row-reverse;
+}
+
+.left .icon2 h2{
+   font-family: 'YekanBakhMedium', sans-serif;
+  direction: rtl;
+}
+
+.left .up p {
+  font-family: 'YekanBakhMedium', sans-serif;
+  direction: rtl;
+  color: gray;
+  padding-top: 15px;
+    line-height: 2rem;
+  padding-bottom: 70px;
+    font-size: 14px;
+}
+
+ .left .down p{
+   font-family: 'YekanBakhMedium', sans-serif;
+  direction: rtl;
+    line-height: 2rem;
+  color: gray;
+    font-size: 14px;
+ }
+
+ .vertical-divider {
+  width: 1px;
+  background-color: #ccc; /* طوسی کمرنگ */
+  margin: 0 20px;
+  height: 440px;
+}
+
+.cadr{
+  border: 1.5px solid rgb(176, 173, 173); ;
+  border-radius: 15px;
+  text-align: center;
+  padding:35px 100px;
+  margin: 60px 140px;
+  line-height: 40px;
+  font-family: 'YekanBakhMedium', sans-serif;
+}
+
+.cadr h2{
+font-weight: 900;
+}
+
+.cadr p{
+  color: gray;
+}
+
+.cadr a{
+  text-decoration: none;
+    font-family: 'YekanBakhMedium', sans-serif;
+    background-color: rgb(137, 202, 72);
+    padding: 2px 25px;
+    border-radius: 7px;
+    color: #000000;
+    border: none;
+    margin: 10px;
+      display: inline-block;
+}
+
+.cadr a:hover{
+    transform:translate(5px , 5px);
+    font-weight: 700;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);  
+}
